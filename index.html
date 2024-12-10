@@ -8,9 +8,6 @@
   </head>
   <body>
     <div id="minesweeper">
-      <header>
-        <h1>Minesweeper 98</h1>
-      </header>
       <main>
         <div id="game-board">
           <div class="window">
@@ -23,13 +20,36 @@
                 <button>✕</button>
               </div>
             </div>
+            <nav class="menu-bar">
+              <ul>
+                <li>
+                  <a href="#">Game</a>
+                  <div class="dropdown-menu">
+                    <ul class="window">
+                      <li>New</li>
+                      <hr />
+                      <li>Beginner</li>
+                      <li>Intermediate</li>
+                      <li>Expert</li>
+                      <li>Custom...</li>
+                      <hr />
+                      <li>Marks (?)</li>
+                      <li>Color</li>
+                      <li>Sound</li>
+                      <hr />
+                      <li>Best Times...</li>
+                      <hr />
+                      <li>Exit</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>Help</li>
+              </ul>
+            </nav>
           </div>
         </div>
         <button class="botao">A</button>
       </main>
-      <footer>
-        <p>&copy; 2023 Sobucki</p>
-      </footer>
     </div>
     <script src="script.js"></script>
   </body>

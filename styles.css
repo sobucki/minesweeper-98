@@ -82,6 +82,35 @@ a {
   gap: 2px;
 }
 
+.menu-bar {
+  /* background-color: red; */
+}
+
+.menu-bar li {
+  display: inline-block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  display: none;
+}
+
+.dropdown-menu ul {
+  min-width: 10rem;
+}
+
+.dropdown-menu li {
+  display: block;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.menu-bar li:hover .dropdown-menu {
+  display: block;
+}
+
 #game-board {
   width: 356px;
   height: 459px;
