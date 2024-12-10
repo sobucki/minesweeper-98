@@ -83,11 +83,13 @@ a {
 }
 
 .menu-bar {
-  /* background-color: red; */
+  margin: 4px 0px;
 }
 
 .menu-bar li {
   display: inline-block;
+  cursor: pointer;
+  padding-right: 10px;
 }
 
 .dropdown-menu {
@@ -96,19 +98,37 @@ a {
 }
 
 .dropdown-menu ul {
-  min-width: 10rem;
+  min-width: 12rem;
 }
 
 .dropdown-menu li {
   display: block;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
+.menu-bar .header {
+  border: 1px solid #bfc7c9;
+  padding: 2px 12px;
+}
+
+.menu-bar li:hover .header {
+  background-color: #bfc7c9;
+  border-top: 1px solid #84898d;
+  border-left: 1px solid #85898d;
+  border-right: 1px solid #fbffff;
+  border-bottom: 1px solid #fcffff;
+}
+
+.menu-bar li:hover {
+  background-color: #bfc7c9;
+}
+
 .menu-bar li:hover .dropdown-menu {
   display: block;
+  padding-top: 3px;
 }
 
 #game-board {
