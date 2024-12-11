@@ -131,9 +131,50 @@ a {
   padding-top: 3px;
 }
 
+.board {
+  min-height: 24rem;
+
+  background-color: hsl(192, 8%, 77%);
+  padding: 6px;
+  border-top: 3px solid #feffff;
+  border-left: 3px solid #feffff;
+  border-right: 3px solid #86888f;
+  border-bottom: 3px solid #86888e;
+}
+
+.board .inner-box {
+  border-top: 3px solid #86888f;
+  border-left: 3px solid #86888e;
+  border-right: 3px solid #feffff;
+  border-bottom: 3px solid #feffff;
+}
+
+.board .mines-area {
+  margin-top: 8px;
+  /* height: 20rem; */
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  align-items: start;
+}
+
+.board .counter-area {
+  height: 37px;
+}
+
+.mine {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-top: 2px solid #e9ebff;
+  border-left: 2px solid #d4d6ff;
+  border-right: 2px solid #86888f;
+  border-bottom: 2px solid #86888f;
+}
+
 #game-board {
   width: 356px;
-  height: 459px;
+  /* height: 459px; */
   background-color: #bfc7c9;
   margin: 0 auto;
 }
