@@ -28,5 +28,14 @@ describe("utils tests", () => {
         createRandomGridMap(2, 2, 5);
       }).toThrow("Too many mines");
     });
+
+    it("should throw an exception when passing above 1 for rows or cols", () => {
+      expect(() => {
+        createRandomGridMap(0, 2, 1);
+      }).toThrow("Invalid rows or cols");
+      expect(() => {
+        createRandomGridMap(2, 0, 1);
+      }).toThrow("Invalid rows or cols");
+    });
   });
 });

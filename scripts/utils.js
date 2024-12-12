@@ -1,9 +1,13 @@
 export function createRandomGridMap(rows, cols, mines) {
-  let grid = new Array(rows).fill(0).map(() => new Array(cols).fill(0));
+  if (rows < 1 || cols < 1) {
+    throw new Error("Invalid rows or cols");
+  }
 
   if (mines > rows * cols) {
     throw new Error("Too many mines");
   }
+
+  let grid = new Array(rows).fill(0).map(() => new Array(cols).fill(0));
 
   let minesPlaced = 0;
   while (minesPlaced < mines) {
