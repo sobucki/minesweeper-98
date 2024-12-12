@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "digital-7-mono";
+  src: url("font/digital-7-mono.ttf") format("truetype");
+}
+
 /* CSS Reset */
 * {
   margin: 0;
@@ -158,8 +163,60 @@ a {
   align-items: start;
 }
 
-.board .counter-area {
+.counter-area {
   height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+  font-family: "digital-7-mono";
+  color: red;
+  font-size: 28px;
+  text-align: center;
+  line-height: 0.6;
+  position: relative;
+}
+
+.disabled-number {
+  font-family: "digital-7-mono";
+  color: #a80057;
+  font-size: 26px;
+  text-align: center;
+  line-height: 0.9;
+  position: absolute;
+  top: 0px;
+  opacity: 0.3;
+  left: 0px;
+  font-size: 28px;
+  text-align: center;
+  line-height: 0.6;
+  width: 100%;
+}
+
+.counter-area .digital-counter {
+  position: relative;
+  width: 41px;
+  height: 25px;
+  border-top: 1px solid #87888f;
+  border-left: 1px solid #87888f;
+  border-bottom: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  background-color: #000;
+}
+
+.counter-area .button-face {
+  width: 23px;
+  height: 23px;
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-bottom: 1px solid #87888f;
+  border-right: 1px solid #87888f;
+}
+
+.button-face.happy {
+  background-image: url("./images/happy_face.png");
+  background-size: cover; /* Ajusta para preencher o botão */
+  background-position: center;
 }
 
 .mine {
