@@ -3,6 +3,22 @@
   src: url("font/digital-7-mono.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Pixelated MS Sans Serif";
+  src: url("font/converted/ms_sans_serif.woff") format("woff");
+  src: url("font/converted/ms_sans_serif.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pixelated MS Sans Serif";
+  src: url("font/converted/ms_sans_serif_bold.woff") format("woff");
+  src: url("font/converted/ms_sans_serif_bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
 /* CSS Reset */
 * {
   margin: 0;
@@ -13,7 +29,7 @@
 html,
 body {
   height: 100%;
-  font-family: "MS Sans Serif", sans-serif;
+  font-family: "Pixelated MS Sans Serif", sans-serif;
 }
 
 img,
