@@ -177,13 +177,47 @@ a {
   border-bottom: 3px solid #feffff;
 }
 
+.row {
+  display: flex;
+}
+
 .board .mines-area {
   margin-top: 8px;
-  /* height: 20rem; */
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: end;
   align-items: start;
+
+  --grid-size: 20px;
+  --grid-strength: 1px;
+  --grid-dash: 2px;
+  --grid-gap: 0px;
+  --grid-color: #ddd;
+  --paper-color: #fff;
+
+  /* background-color: var(--paper-color); */
+  background-size: var(--grid-gap) var(--grid-gap),
+    var(--grid-size) var(--grid-size);
+  background-image: linear-gradient(
+      to bottom,
+      transparent var(--grid-dash),
+      var(--paper-color) var(--grid-dash)
+    ),
+    linear-gradient(
+      to right,
+      var(--grid-color) var(--grid-strength),
+      transparent var(--grid-strength)
+    ),
+    linear-gradient(
+      to right,
+      transparent var(--grid-dash),
+      var(--paper-color) var(--grid-dash)
+    ),
+    linear-gradient(
+      to bottom,
+      var(--grid-color) var(--grid-strength),
+      transparent var(--grid-strength)
+    );
 }
 
 .counter-area {
@@ -250,6 +284,59 @@ a {
   border-left: 2px solid #d4d6ff;
   border-right: 2px solid #86888f;
   border-bottom: 2px solid #86888f;
+}
+
+.bomb {
+  width: 20px;
+  height: 20px;
+  background-image: url("./images/icon.png");
+  background-size: cover; /* Ajusta para preencher o botão */
+  background-position: center;
+}
+
+.empty {
+  width: 20px;
+  height: 20px;
+}
+.open {
+  width: 20px;
+  height: 20px;
+}
+
+.cell {
+  text-align: center;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  line-height: 22px;
+  font-weight: bolder;
+  font-family: "Pixelated MS Sans Serif", sans-serif;
+}
+
+.cell[data-value="1"] {
+  color: #0301fc;
+}
+
+.cell[data-value="2"] {
+  color: #028000;
+}
+.cell[data-value="3"] {
+  color: #fb0101;
+}
+.cell[data-value="4"] {
+  color: #010180;
+}
+.cell[data-value="5"] {
+  color: #7d0001;
+}
+.cell[data-value="6"] {
+  color: #00807e;
+}
+.cell[data-value="7"] {
+  color: #000000;
+}
+.cell[data-value="8"] {
+  color: #808080;
 }
 
 #game-board {

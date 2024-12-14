@@ -22,16 +22,46 @@ export class Game {
 
     const minesArea = gameBoard.querySelector(".mines-area");
 
-    this.grid.forEach((row, _rowIndex) => {
+    this.grid.forEach((row, rowIndex) => {
       const rowElement = document.createElement("div");
       rowElement.className = "row";
-      row.forEach((cell, _colIndex) => {
+      row.forEach((cell, colIndex) => {
         const cellElement = document.createElement("div");
-        cellElement.className = "mine";
-        cellElement.textContent = cell;
+        cellElement.className = "cell mine";
+        // cellElement.textContent = cell;
+        cellElement.dataset.row = rowIndex;
+        cellElement.dataset.col = colIndex;
         rowElement.appendChild(cellElement);
       });
       minesArea.appendChild(rowElement);
     });
+  }
+
+  gameOver() {
+    console.log("Game Over");
+  }
+
+  revealCell(row, col, cell) {
+    if (cell.classList.contains("mine")) {
+      cell.classList.remove("mine");
+
+      if (this.grid[row][col] === "*") {
+        cell.classList.add("bomb");
+        this.gameOver();
+        return;
+      }
+
+      cell.classList.add("open");
+      if (this.grid[row][col] === 0) {
+        cell.classList.add("empty");
+        return;
+        // this.revealEmptyCells(row, col);
+      }
+
+      const proximityValue = this.grid[row][col];
+
+      cell.setAttribute("data-value", proximityValue);
+      cell.textContent = proximityValue;
+    }
   }
 }
