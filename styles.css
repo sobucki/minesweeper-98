@@ -60,6 +60,7 @@ a {
   border-left: 2px solid #d4d6ff;
   border-right: 2px solid #484967;
   border-bottom: 2px solid #060735;
+  position: absolute;
 }
 
 .window .title-bar {
@@ -69,6 +70,7 @@ a {
   display: flex;
   align-items: center;
   height: 18px;
+  user-select: none;
 }
 
 .title-bar img {
@@ -343,5 +345,6 @@ a {
   width: 192px;
   /* height: 459px; */
   background-color: #bfc7c9;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  position: relative;
 }

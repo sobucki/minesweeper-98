@@ -1,4 +1,5 @@
 import { Game } from "./game.js";
+import "./window-util.js";
 
 let game;
 
