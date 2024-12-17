@@ -1,4 +1,5 @@
 import { Game } from "../game";
+import "@testing-library/jest-dom";
 
 describe("Game tests", () => {
   describe("initializing values", () => {
@@ -16,12 +17,13 @@ describe("Game tests", () => {
       [0, 0, 0, 0],
     ];
 
-    it("should create a grid with correct number of mines", () => {
-      jest
+    it("should create a grid with correct number of mines", async () => {
+      const createRandomGridMapMock = jest
         .spyOn(require("../utils"), "createRandomGridMap")
         .mockReturnValue(game1);
-      const game = new Game();
+      const game = new Game("game-container");
       expect(game.grid).toEqual(resultGame1);
+      createRandomGridMapMock.mockRestore();
     });
   });
 });

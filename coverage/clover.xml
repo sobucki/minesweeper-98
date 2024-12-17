@@ -1,7 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1734034008125" clover="3.2.0">
-  <project timestamp="1734034008125" name="All files">
-    <metrics statements="25" coveredstatements="25" conditionals="18" coveredconditionals="18" methods="5" coveredmethods="5" elements="48" coveredelements="48" complexity="0" loc="25" ncloc="25" packages="1" files="1" classes="1"/>
+<coverage generated="1734457905144" clover="3.2.0">
+  <project timestamp="1734457905144" name="All files">
+    <metrics statements="70" coveredstatements="54" conditionals="32" coveredconditionals="21" methods="14" coveredmethods="11" elements="116" coveredelements="86" complexity="0" loc="70" ncloc="70" packages="1" files="2" classes="2"/>
+    <file name="game.js" path="/home/sobucki/Projects/Sobucki/css/minesweeper-98/scripts/game.js">
+      <metrics statements="45" coveredstatements="29" conditionals="14" coveredconditionals="3" methods="9" coveredmethods="6"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="9" count="2" type="stmt"/>
+      <line num="10" count="2" type="stmt"/>
+      <line num="11" count="2" type="stmt"/>
+      <line num="15" count="2" type="stmt"/>
+      <line num="16" count="2" type="stmt"/>
+      <line num="17" count="2" type="stmt"/>
+      <line num="21" count="2" type="stmt"/>
+      <line num="23" count="2" type="stmt"/>
+      <line num="25" count="2" type="stmt"/>
+      <line num="26" count="8" type="stmt"/>
+      <line num="27" count="8" type="stmt"/>
+      <line num="28" count="8" type="stmt"/>
+      <line num="29" count="32" type="stmt"/>
+      <line num="30" count="32" type="stmt"/>
+      <line num="32" count="32" type="stmt"/>
+      <line num="33" count="32" type="stmt"/>
+      <line num="34" count="32" type="stmt"/>
+      <line num="36" count="8" type="stmt"/>
+      <line num="41" count="0" type="stmt"/>
+      <line num="45" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="46" count="1" type="stmt"/>
+      <line num="48" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="49" count="0" type="stmt"/>
+      <line num="50" count="0" type="stmt"/>
+      <line num="51" count="0" type="stmt"/>
+      <line num="54" count="1" type="stmt"/>
+      <line num="55" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="56" count="0" type="stmt"/>
+      <line num="57" count="0" type="stmt"/>
+      <line num="60" count="1" type="stmt"/>
+      <line num="62" count="1" type="stmt"/>
+      <line num="63" count="1" type="stmt"/>
+      <line num="68" count="0" type="stmt"/>
+      <line num="71" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="72" count="0" type="stmt"/>
+      <line num="75" count="0" type="stmt"/>
+      <line num="77" count="0" type="stmt"/>
+      <line num="84" count="0" type="stmt"/>
+      <line num="85" count="0" type="stmt"/>
+      <line num="86" count="0" type="stmt"/>
+      <line num="88" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="94" count="0" type="stmt"/>
+    </file>
     <file name="utils.js" path="/home/sobucki/Projects/Sobucki/css/minesweeper-98/scripts/utils.js">
       <metrics statements="25" coveredstatements="25" conditionals="18" coveredconditionals="18" methods="5" coveredmethods="5"/>
       <line num="2" count="8" type="cond" truecount="4" falsecount="0"/>
@@ -11,24 +59,24 @@
       <line num="10" count="10" type="stmt"/>
       <line num="12" count="5" type="stmt"/>
       <line num="13" count="5" type="stmt"/>
-      <line num="14" count="13" type="stmt"/>
-      <line num="15" count="13" type="stmt"/>
-      <line num="16" count="13" type="cond" truecount="2" falsecount="0"/>
+      <line num="14" count="11" type="stmt"/>
+      <line num="15" count="11" type="stmt"/>
+      <line num="16" count="11" type="cond" truecount="2" falsecount="0"/>
       <line num="17" count="10" type="stmt"/>
       <line num="18" count="10" type="stmt"/>
       <line num="21" count="5" type="stmt"/>
-      <line num="25" count="20" type="stmt"/>
-      <line num="26" count="62" type="stmt"/>
-      <line num="27" count="224" type="cond" truecount="2" falsecount="0"/>
-      <line num="28" count="74" type="stmt"/>
-      <line num="30" count="150" type="stmt"/>
-      <line num="31" count="150" type="stmt"/>
-      <line num="32" count="450" type="stmt"/>
-      <line num="33" count="1350" type="cond" truecount="6" falsecount="0"/>
-      <line num="34" count="851" type="cond" truecount="2" falsecount="0"/>
-      <line num="35" count="237" type="stmt"/>
-      <line num="40" count="150" type="stmt"/>
-      <line num="43" count="20" type="stmt"/>
+      <line num="25" count="22" type="stmt"/>
+      <line num="26" count="70" type="stmt"/>
+      <line num="27" count="256" type="cond" truecount="2" falsecount="0"/>
+      <line num="28" count="78" type="stmt"/>
+      <line num="30" count="178" type="stmt"/>
+      <line num="31" count="178" type="stmt"/>
+      <line num="32" count="534" type="stmt"/>
+      <line num="33" count="1602" type="cond" truecount="6" falsecount="0"/>
+      <line num="34" count="1015" type="cond" truecount="2" falsecount="0"/>
+      <line num="35" count="265" type="stmt"/>
+      <line num="40" count="178" type="stmt"/>
+      <line num="43" count="22" type="stmt"/>
     </file>
   </project>
 </coverage>
