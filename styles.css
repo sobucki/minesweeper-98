@@ -30,6 +30,7 @@ html,
 body {
   height: 100%;
   font-family: "Pixelated MS Sans Serif", sans-serif;
+  background-color: #008080;
 }
 
 img,
@@ -51,6 +52,38 @@ select {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+}
+
+footer {
+  height: 27px;
+  background: #c0c0c0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid #c0c0c0;
+}
+
+footer .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding-left: 4px;
+  border-top: 1px solid #fff;
+}
+
+.image-icons {
+  background-image: url("./images/icons_background.png");
+  width: 150px;
+  height: 510px;
+  position: absolute;
+  margin: 10px;
+  margin-left: 10px;
 }
 
 .window {
