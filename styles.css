@@ -57,6 +57,7 @@ a {
 main {
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
 
 footer {
@@ -75,6 +76,24 @@ footer .content {
   height: 100%;
   padding-left: 4px;
   border-top: 1px solid #fff;
+}
+
+.time-wrap {
+  width: 97px;
+  height: 22px;
+
+  border-top: 1px solid #808080;
+  border-left: 1px solid #808080;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.time-wrap span {
+  font-size: 13px;
 }
 
 .image-icons {
@@ -306,9 +325,11 @@ footer .content {
 }
 
 .button-face.happy {
-  background-image: url("./images/happy_face.png");
-  background-size: cover; /* Ajusta para preencher o botão */
+  background-image: url(./images/happy_face.png);
+  background-size: 24px;
   background-position: center;
+  padding: 13px;
+  background-repeat: no-repeat;
 }
 
 .mine {
@@ -325,7 +346,7 @@ footer .content {
   width: 20px;
   height: 20px;
   background-image: url("./images/icon.png");
-  background-size: cover; /* Ajusta para preencher o botão */
+  background-size: cover;
   background-position: center;
 }
 
@@ -376,8 +397,7 @@ footer .content {
 
 #game-board {
   width: 192px;
-  /* height: 459px; */
+  min-width: 192px;
   background-color: #bfc7c9;
-  /* margin: 0 auto; */
   position: relative;
 }
