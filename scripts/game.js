@@ -25,10 +25,10 @@ export class Game {
 
     this.grid.forEach((row, rowIndex) => {
       const rowElement = document.createElement("div");
-      rowElement.className = "row";
+      rowElement.className = "row_old";
       row.forEach((cell, colIndex) => {
         const cellElement = document.createElement("div");
-        cellElement.className = "cell mine";
+        cellElement.className = "cell_old mine";
         // cellElement.textContent = cell;
         cellElement.dataset.row = rowIndex;
         cellElement.dataset.col = colIndex;
@@ -67,7 +67,7 @@ export class Game {
 
   revealEmptyCells(row, col) {
     const cell = document.querySelector(
-      `.cell[data-row="${row}"][data-col="${col}"]`
+      `.cell_old[data-row="${row}"][data-col="${col}"]`
     );
     if (cell.classList.contains("empty")) {
       return;
@@ -96,7 +96,7 @@ export class Game {
           newRow,
           newCol,
           document.querySelector(
-            `.cell[data-row="${newRow}"][data-col="${newCol}"]`
+            `.cell_old[data-row="${newRow}"][data-col="${newCol}"]`
           )
         );
       }
