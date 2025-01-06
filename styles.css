@@ -54,6 +54,16 @@ a {
   color: inherit;
 }
 
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
 main {
   width: 100%;
   height: 100vh;
@@ -369,29 +379,29 @@ footer .content_old {
   font-family: "Pixelated MS Sans Serif", sans-serif;
 }
 
-.cell_old[data-value="1"] {
+.cell[data-value="1"] {
   color: #0301fc;
 }
 
-.cell_old[data-value="2"] {
+.cell[data-value="2"] {
   color: #028000;
 }
-.cell_old[data-value="3"] {
+.cell[data-value="3"] {
   color: #fb0101;
 }
-.cell_old[data-value="4"] {
+.cell[data-value="4"] {
   color: #010180;
 }
-.cell_old[data-value="5"] {
+.cell[data-value="5"] {
   color: #7d0001;
 }
-.cell_old[data-value="6"] {
+.cell[data-value="6"] {
   color: #00807e;
 }
-.cell_old[data-value="7"] {
+.cell[data-value="7"] {
   color: #000000;
 }
-.cell_old[data-value="8"] {
+.cell[data-value="8"] {
   color: #808080;
 }
 
@@ -620,7 +630,18 @@ a.header::first-letter {
 
 /* Faces */
 .happy-face {
-  background-image: url("../images/happy-face.svg");
+  background-image: url("./images/happy-face.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.dead-face {
+  background-image: url("./images/dead-face-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.scary-face {
+  background-image: url("./images/scary-face.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -647,6 +668,13 @@ a.header::first-letter {
   background: #b8b8b8;
   box-shadow: 1px 1px 0px 0px #fff inset,
     -1px -1px 0px 0px rgba(0, 0, 0, 0.3) inset;
+
+  text-align: center;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+  line-height: 18px;
+  font-weight: bolder;
 }
 
 .row {
@@ -660,7 +688,16 @@ a.header::first-letter {
 }
 
 .flagged {
-  background-image: url("../images/flag-icon.svg");
+  background-image: url("./images/flag-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+.bomb {
+  background-image: url("./images/cell-bomb-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.exploded {
+  background-color: red;
 }

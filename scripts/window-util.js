@@ -1,5 +1,5 @@
-const windowElement = document.querySelector("#game-board");
-const toolbarElement = windowElement.querySelector(".title-bar_old");
+const windowElement = document.querySelector("#new-game");
+const toolbarElement = windowElement.querySelector(".title-bar");
 
 let isDragging = false;
 let offsetX = 0;
