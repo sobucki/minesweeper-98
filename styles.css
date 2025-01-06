@@ -1,9 +1,4 @@
 @font-face {
-  font-family: "digital-7-mono";
-  src: url("font/digital-7-mono.ttf") format("truetype");
-}
-
-@font-face {
   font-family: "Pixelated MS Sans Serif";
   src: url("font/converted/ms_sans_serif.woff") format("woff");
   src: url("font/converted/ms_sans_serif.woff2") format("woff2");
@@ -79,7 +74,7 @@ footer {
   border-top: 1px solid #c0c0c0;
 }
 
-footer .content_old {
+footer .bar-icons {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -113,76 +108,6 @@ footer .content_old {
   position: absolute;
   margin: 10px;
   margin-left: 10px;
-}
-
-.window_old {
-  background-color: hsl(192, 8%, 77%);
-  padding: 2px;
-  border-top: 2px solid #e9ebff;
-  border-left: 2px solid #d4d6ff;
-  border-right: 2px solid #484967;
-  border-bottom: 2px solid #060735;
-  position: absolute;
-}
-
-.window_old .title-bar_old {
-  background-color: #0000a8;
-  color: #fdfdff;
-  padding: 2px;
-  display: flex;
-  align-items: center;
-  height: 18px;
-  user-select: none;
-}
-
-.title-bar_old img {
-  height: 16px;
-  width: 16px;
-  overflow: hidden;
-  margin-left: 2px;
-}
-
-.title-bar_old p {
-  display: flex;
-  flex: 1;
-  font-size: 13px;
-  font-weight: bold;
-}
-
-.title-bar_old button {
-  display: flex;
-  height: 15px;
-  width: 15px;
-  align-items: center;
-  justify-content: center;
-  background-color: #bfc7c9;
-  border-top: 1px solid #e9ebff;
-  border-left: 1px solid #d4d6ff;
-  border-right: 1px solid #484967;
-  border-bottom: 1px solid #060735;
-  margin-left: 1px;
-  font-size: 10px;
-  font-weight: bolder;
-}
-
-.title-bar_old button:last-of-type {
-  margin-left: 2px;
-}
-
-.button-wrap {
-  display: flex;
-  justify-content: center;
-  /* gap: 2px; */
-}
-
-.menu-bar_old {
-  margin: 4px 0px;
-}
-
-.menu-bar_old li {
-  display: inline-block;
-  cursor: pointer;
-  padding-right: 10px;
 }
 
 .dropdown-menu {
@@ -241,10 +166,6 @@ footer .content_old {
   border-bottom: 3px solid #feffff;
 }
 
-.row_old {
-  display: flex;
-}
-
 .board .mines-area {
   margin-top: 8px;
   display: inline-flex;
@@ -284,74 +205,6 @@ footer .content_old {
     );
 }
 
-.counter-area {
-  height: 37px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 5px;
-  font-family: "digital-7-mono";
-  color: red;
-  font-size: 28px;
-  text-align: center;
-  line-height: 0.6;
-  position: relative;
-}
-
-.disabled-number {
-  font-family: "digital-7-mono";
-  color: #a80057;
-  font-size: 26px;
-  text-align: center;
-  line-height: 0.9;
-  position: absolute;
-  top: 0px;
-  opacity: 0.3;
-  left: 0px;
-  font-size: 28px;
-  text-align: center;
-  line-height: 0.6;
-  width: 100%;
-}
-
-.counter-area .digital-counter {
-  position: relative;
-  width: 41px;
-  height: 25px;
-  border-top: 1px solid #87888f;
-  border-left: 1px solid #87888f;
-  border-bottom: 1px solid #ffffff;
-  border-right: 1px solid #ffffff;
-  background-color: #000;
-}
-
-.counter-area .button-face {
-  width: 23px;
-  height: 23px;
-  border-top: 1px solid #ffffff;
-  border-left: 1px solid #ffffff;
-  border-bottom: 1px solid #87888f;
-  border-right: 1px solid #87888f;
-}
-
-.button-face.happy {
-  background-image: url(./images/happy_face.png);
-  background-size: 24px;
-  background-position: center;
-  padding: 13px;
-  background-repeat: no-repeat;
-}
-
-.mine {
-  cursor: pointer;
-  width: 20px;
-  height: 20px;
-  border-top: 2px solid #e9ebff;
-  border-left: 2px solid #d4d6ff;
-  border-right: 2px solid #86888f;
-  border-bottom: 2px solid #86888f;
-}
-
 .bomb {
   width: 20px;
   height: 20px;
@@ -367,16 +220,6 @@ footer .content_old {
 .open {
   width: 20px;
   height: 20px;
-}
-
-.cell_old {
-  text-align: center;
-  font-size: 14px;
-  align-items: center;
-  justify-content: center;
-  line-height: 22px;
-  font-weight: bolder;
-  font-family: "Pixelated MS Sans Serif", sans-serif;
 }
 
 .cell[data-value="1"] {
@@ -411,7 +254,6 @@ footer .content_old {
   background-color: #bfc7c9;
   position: relative;
 }
-/* ------------------------------------ */
 
 .window {
   width: 158px;
