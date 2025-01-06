@@ -460,17 +460,17 @@ footer .content_old {
 }
 
 #minimize {
-  background-image: url("../images/minimize-window-icon.svg");
+  background-image: url("./images/minimize-window-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 #maximize {
-  background-image: url("../images/disabled-maximize-window-icon.svg");
+  background-image: url("./images/disabled-maximize-window-icon.svg");
   background-repeat: no-repeat;
   background-position: center 2px;
 }
 #close {
-  background-image: url("../images/close-window-icon.svg");
+  background-image: url("./images/close-window-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -562,57 +562,57 @@ a.header::first-letter {
 }
 
 .digit-0 {
-  background-image: url("../images/number-0.svg");
+  background-image: url("./images/number-0.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 .digit-1 {
-  background-image: url("../images/number-1.svg");
+  background-image: url("./images/number-1.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 .digit-2 {
-  background-image: url("../images/number-2.svg");
+  background-image: url("./images/number-2.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 .digit-3 {
-  background-image: url("../images/number-3.svg");
+  background-image: url("./images/number-3.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 .digit-4 {
-  background-image: url("../images/number-4.svg");
+  background-image: url("./images/number-4.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 .digit-5 {
-  background-image: url("../images/number-5.svg");
+  background-image: url("./images/number-5.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 .digit-6 {
-  background-image: url("../images/number-6.svg");
+  background-image: url("./images/number-6.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 .digit-7 {
-  background-image: url("../images/number-7.svg");
+  background-image: url("./images/number-7.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 .digit-8 {
-  background-image: url("../images/number-8.svg");
+  background-image: url("./images/number-8.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 .digit-9 {
-  background-image: url("../images/number-9.svg");
+  background-image: url("./images/number-9.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 .digit-minus {
-  background-image: url("../images/minus.svg");
+  background-image: url("./images/minus.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
