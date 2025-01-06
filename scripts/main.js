@@ -1,22 +1,10 @@
-import { Game } from "./game.js";
+// import { Game } from "./game.js";
+import { Game as NewGame } from "./new-game.js";
 import "./window-util.js";
 
-let game;
+let newGame;
 
 document.addEventListener("DOMContentLoaded", () => {
-  game = new Game("game-board");
-
-  const mineArea = document.querySelector(".mines-area");
-
-  mineArea.addEventListener("click", (event) => {
-    const cell = event.target;
-    const row = cell.dataset.row;
-    const col = cell.dataset.col;
-
-    if (event.target.classList.contains("mine")) {
-      game.revealCell(row, col, cell);
-    }
-  });
-
-  console.table(game.grid);
+  newGame = new NewGame("new-game");
+  console.table(newGame.grid);
 });

@@ -1,4 +1,4 @@
-const windowElement = document.querySelector("#game-board");
+const windowElement = document.querySelector("#new-game");
 const toolbarElement = windowElement.querySelector(".title-bar");
 
 let isDragging = false;
